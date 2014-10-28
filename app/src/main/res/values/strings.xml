@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="application_name">RehabCoach</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="next_task">Next Task</string>
+    <string name="all_tasks">All tasks</string>
+    <string name="title_activity_add_task">AddTask</string>
+    <string name="task_name">Task Name</string>
+    <string name="title_activity_task_info">TaskInfoActivity</string>
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:ripple="http://schemas.android.com/apk/res-auto"
+            android:background="@drawable/list_item_task_background"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <com.andexert.library.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        ripple:rv_alpha="45"
+        ripple:rv_color="#000000">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/taskNameTextView"
+        android:layout_marginBottom="4dp"
+        tools:text="Perform Laundry"
+        android:textSize="24sp"
+        />
+
+    <ImageView
+        android:layout_below="@id/taskNameTextView"
+        android:layout_width="@dimen/listitem_task_clock_width"
+        android:layout_height="@dimen/listitem_task_clock_height"
+        android:id="@+id/taskTimeImageView"
+        android:src="@drawable/clock_3"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/taskTimeTextView"
+        android:layout_below="@id/taskNameTextView"
+        tools:text="12:00 PM - 12:30 PM"
+        android:textSize="14sp"
+        android:textColor="#237a10"
+        android:layout_marginLeft="8dp"
+        android:layout_alignBottom="@id/taskTimeImageView"
+        android:layout_toRightOf="@id/taskTimeImageView"/>
+    </com.andexert.library.RippleView>
+</RelativeLayout>

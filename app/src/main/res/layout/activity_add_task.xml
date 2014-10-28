@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="health.osu.com.rehabcoach.AddTaskActivity">
+
+    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/taskNameEditText"
+        android:singleLine="true"
+        float:fletFloatingHint="Task Name"/>
+
+    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/taskNameEditText"
+        android:id="@+id/taskDescriptionEditText"
+        float:fletFloatingHint="Description"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/repeatOptionLinearLayout"
+        android:layout_below="@id/taskDescriptionEditText">
+
+        <com.gc.materialdesign.views.CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/repeatingTaskCheckBox"
+            android:background="#1E88E5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Repeat"
+            />
+        </LinearLayout>
+
+    <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/repeatOptionLinearLayout"
+         android:id="@+id/repeatDataLinearLayout"
+         android:visibility="gone"
+         android:layout_marginTop="8dp"
+         android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="18sp"
+        android:layout_marginRight="24dp"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateTextView"
+        android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repeatDataLinearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textAllCaps="true"
+            android:layout_marginRight="24dp"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:minWidth="80dp"
+            android:id="@+id/timeEditText"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp">
+
+        <com.gc.materialdesign.views.ButtonFlat
+            android:id="@+id/taskCancelButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#92a3a1"
+            android:layout_weight="1"
+            android:text="Cancel" />
+
+        <com.gc.materialdesign.views.ButtonFlat
+            android:id="@+id/taskAddButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#32b704"
+            android:layout_weight="1"
+            android:text="Add" />
+
+    </LinearLayout>
+</RelativeLayout>
