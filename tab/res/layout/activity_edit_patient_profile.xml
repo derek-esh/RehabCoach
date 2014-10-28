@@ -1,0 +1,386 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tab.EditPatientProfile" >
+    
+    <ScrollView 
+        android:id="@+id/scv"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dp">
+    
+    <LinearLayout
+        android:id="@+id/infoPart"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dp"
+        >
+        
+        
+        <TextView
+           	android:id="@+id/aboutMe"
+           	android:layout_width="wrap_content"
+           	android:layout_height="wrap_content"
+           	android:textSize="20sp"
+           	android:text="About Me:" 
+           	android:layout_margin="10dp"/>
+        
+        <LinearLayout
+            android:id="@+id/aboutMePart"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_margin="10dp">
+            
+            
+           	<LinearLayout
+           	    android:id="@+id/aboutMeTitle"
+           	    android:orientation="vertical"
+           	    android:layout_width="wrap_content"
+           	    android:layout_height="wrap_content" >
+           	    
+           	    <TextView
+           	        android:id="@+id/fnameTitle"
+           	        android:layout_width="wrap_content"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"
+           	        android:text="First name:" 
+           	        android:layout_margin="8dp"/>
+           	    
+           	    <TextView
+           	        android:id="@+id/lnameTitle"
+           	        android:layout_width="wrap_content"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"
+           	        android:text="Last name:" 
+           	        android:layout_margin="8dp"/>
+           	    
+           	    <TextView
+           	        android:id="@+id/preferredTitle"
+           	        android:layout_width="wrap_content"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"
+           	        android:text="Preferred name:" 
+           	        android:layout_margin="8dp"/>
+           	    
+           	    <TextView
+           	        android:id="@+id/glassTitle"
+           	        android:layout_width="wrap_content"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"
+           	        android:text="Wear glass?" 
+           	        android:layout_margin="12dp"/>
+           	    
+           	    <TextView
+           	        android:id="@+id/hearingAideTitle"
+           	        android:layout_width="wrap_content"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"
+           	        android:text="Use hearing aide?" 
+           	        android:layout_margin="12dp"/>
+           	    
+           	</LinearLayout>
+           	
+           	<LinearLayout
+           	    android:id="@+id/editAboutMe"
+           	    android:orientation="vertical"
+           	    android:layout_width="wrap_content"
+           	    android:layout_height="wrap_content" >
+           	    
+           	    <EditText
+           	        android:id="@+id/editFname"
+           	        android:layout_width="169dp"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"/>
+           	    
+           	    <EditText
+           	        android:id="@+id/editLname"
+           	        android:layout_width="169dp"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"/>
+           	    
+           	    <EditText
+           	        android:id="@+id/editPreferredName"
+           	        android:layout_width="169dp"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"/>
+           	    
+           	    <Spinner
+    				android:id="@+id/wearGlassSpinner"
+    				android:layout_width="match_parent"
+    				android:layout_height="wrap_content"
+    				android:textSize="15sp"
+    				android:layout_margin="5dp"/>
+           	    
+           	    <Spinner
+    				android:id="@+id/useHearingAideSpinner"
+    				android:layout_width="match_parent"
+    				android:layout_height="wrap_content"
+    				android:textSize="15sp"
+    				android:layout_margin="5dp"/>
+           	    
+           	</LinearLayout>
+        
+    	</LinearLayout>
+    	
+        <TextView
+           	android:id="@+id/whereAmI"
+           	android:layout_width="wrap_content"
+           	android:layout_height="wrap_content"
+           	android:textSize="20sp"
+           	android:text="Where I Am:" 
+           	android:layout_margin="10dp"/>
+    	
+        <LinearLayout
+            android:id="@+id/whereAmIPart"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_margin="10dp">
+           	
+            <LinearLayout
+           	    android:id="@+id/whereAmITitle"
+           	    android:orientation="vertical"
+           	    android:layout_width="wrap_content"
+           	    android:layout_height="wrap_content" >
+           	    
+                <TextView
+           	        android:id="@+id/reasonTitle"
+           	        android:layout_width="wrap_content"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"
+           	        android:text="Reason in hospital:" 
+           	        android:layout_margin="8dp"/>
+                
+                <TextView
+           	        android:id="@+id/hospitalNameTitle"
+           	        android:layout_width="wrap_content"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"
+           	        android:text="Name of hospital:" 
+           	        android:layout_margin="8dp"/>
+                
+                <TextView
+           	        android:id="@+id/buildingNameTitle"
+           	        android:layout_width="wrap_content"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"
+           	        android:text="Name of building:" 
+           	        android:layout_margin="8dp"/>
+                
+                <TextView
+           	        android:id="@+id/cityNameTitle"
+           	        android:layout_width="wrap_content"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"
+           	        android:text="Name of city:" 
+           	        android:layout_margin="8dp"/>
+           	</LinearLayout>
+           	
+            <LinearLayout
+           	    android:id="@+id/editWhereAmI"
+           	    android:orientation="vertical"
+           	    android:layout_width="wrap_content"
+           	    android:layout_height="wrap_content" >
+                
+                <EditText
+           	        android:id="@+id/editReason"
+           	        android:layout_width="169dp"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"/>
+                
+                <EditText
+           	        android:id="@+id/editHospitalName"
+           	        android:layout_width="169dp"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"/>
+                
+                <EditText
+           	        android:id="@+id/editBuildingName"
+           	        android:layout_width="169dp"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"/>
+                
+                <EditText
+           	        android:id="@+id/editCityName"
+           	        android:layout_width="169dp"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"/>
+           	</LinearLayout>
+           	
+        </LinearLayout>
+        
+        <TextView
+           	android:id="@+id/inDoddHall"
+           	android:layout_width="wrap_content"
+           	android:layout_height="wrap_content"
+           	android:textSize="20sp"
+           	android:text="In Dodd Hall:" 
+           	android:layout_margin="10dp"/>
+    	
+        <LinearLayout
+            android:id="@+id/inDoddHallPart"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_margin="10dp">
+           	
+            <LinearLayout
+           	    android:id="@+id/inDoddHallTitle"
+           	    android:orientation="vertical"
+           	    android:layout_width="wrap_content"
+           	    android:layout_height="wrap_content" >
+           	    
+                <TextView
+           	        android:id="@+id/roomNumberTitle"
+           	        android:layout_width="wrap_content"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"
+           	        android:text="My room number:" 
+           	        android:layout_margin="8dp"/>
+                
+                <TextView
+           	        android:id="@+id/roomFloorTitle"
+           	        android:layout_width="wrap_content"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"
+           	        android:text="Floor of my room:" 
+           	        android:layout_margin="8dp"/>
+                
+           	</LinearLayout>
+           	
+            <LinearLayout
+           	    android:id="@+id/editInDoddHall"
+           	    android:orientation="vertical"
+           	    android:layout_width="wrap_content"
+           	    android:layout_height="wrap_content" >
+                
+                <EditText
+           	        android:id="@+id/editRoomNumber"
+           	        android:layout_width="169dp"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"/>
+                
+                <EditText
+           	        android:id="@+id/editRoomFloor"
+           	        android:layout_width="169dp"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"/>
+                                
+           	</LinearLayout>
+           	
+        </LinearLayout>
+        
+        
+        <TextView
+           	android:id="@+id/myDiet"
+           	android:layout_width="wrap_content"
+           	android:layout_height="wrap_content"
+           	android:textSize="20sp"
+           	android:text="My Diet:" 
+           	android:layout_margin="10dp"/>
+    	
+        <LinearLayout
+            android:id="@+id/myDietPart"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_margin="10dp">
+           	
+            <LinearLayout
+           	    android:id="@+id/myDietTitle"
+           	    android:orientation="vertical"
+           	    android:layout_width="wrap_content"
+           	    android:layout_height="wrap_content" >
+           	    
+                <TextView
+           	        android:id="@+id/liquidThicknessTitle"
+           	        android:layout_width="wrap_content"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"
+           	        android:text="Liqiud thickness:" 
+           	        android:layout_margin="12dp"/>
+                
+                <TextView
+           	        android:id="@+id/dietConsistencyTitle"
+           	        android:layout_width="wrap_content"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="15sp"
+           	        android:text="Diet consistency:" 
+           	        android:layout_margin="12dp"/>
+                
+           	</LinearLayout>
+           	
+            <LinearLayout
+           	    android:id="@+id/editMyDiet"
+           	    android:orientation="vertical"
+           	    android:layout_width="wrap_content"
+           	    android:layout_height="wrap_content" >
+                
+                <Spinner
+    				android:id="@+id/liquidThicknessSpinner"
+    				android:layout_width="match_parent"
+    				android:layout_height="wrap_content"
+    				android:textSize="15sp"
+    				android:layout_margin="5dp"/>
+                
+                <Spinner
+           	        android:id="@+id/dietConsistencySpinner"
+           	        android:layout_width="match_parent"
+    				android:layout_height="wrap_content"
+    				android:textSize="15sp"
+    				android:layout_margin="5dp"/>
+                                
+           	</LinearLayout>
+           	
+        </LinearLayout>
+        
+    	
+        <LinearLayout
+            android:id="@+id/buttonPart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" 
+			android:layout_margin="10dp">
+       		
+           <Button
+               android:id="@+id/sumbmit"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_weight="1"
+               android:fontFamily="@string/abc_action_bar_up_description"
+               android:minHeight="10dp"
+               android:text="Submit"
+               android:textSize="15sp" 
+               android:layout_marginRight="20dp"
+               android:onClick="SavePatientInfo"/>
+           
+           <Button
+               android:id="@+id/Cancel"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:fontFamily="@string/abc_action_bar_up_description"
+               android:minHeight="10dp"
+               android:textSize="15sp"
+               android:text="Cancel" 
+               android:layout_marginLeft="20dp"
+               android:onClick="BackToMainScreen"/>
+        
+    	</LinearLayout>
+    	        
+    </LinearLayout>
+    
+    </ScrollView>
+
+    
+</LinearLayout>

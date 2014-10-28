@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RehabCoach</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_edit_patient_profile">EditPatientProfile</string>
+    <string name="action_settings">Settings</string>
+    
+    <string-array name="glass_array">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+    
+    <string-array name="hearaide_array">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+    
+    <string-array name="liquidThickness_array">
+        <item>Pudding</item>
+        <item>Honey</item>
+        <item>Nectar</item>
+        <item>Thin</item>
+    </string-array>
+    
+    <string-array name="dietConsistency_array">
+        <item>Regular</item>
+        <item>Puree (level 1)</item>
+        <item>Meck Soft (level 2)</item>
+        <item>Soft (level 3)</item>       
+    </string-array>
+
+</resources>
